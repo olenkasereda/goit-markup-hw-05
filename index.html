@@ -58,7 +58,14 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button class="hero-title-button" type="button">Заказать услугу</button>
+					<button class="hero-title-button" type="button" data-modal-open>Заказать услугу</button>
+					<div class="backdrop is-hidden" data-modal>
+						<div class="modal">
+							<button class="modal-button" data-modal-close>
+								<img src="./images/ic/close.svg" alt="close" width="30" />
+							</button>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!-- features -->
@@ -78,8 +85,8 @@
 							</p>
 						</li>
 						<li class="features-item icon-time">
-							<div class="features-item-icon"
-								><svg class="contacts-link-icon" width="70" height="70">
+							<div class="features-item-icon">
+								<svg class="contacts-link-icon" width="70" height="70">
 									<use href="./images/symbol.svg#icon-clock"></use>
 								</svg>
 							</div>
@@ -118,12 +125,15 @@
 					<ul class="work-list">
 						<li class="work-item">
 							<img src="./images/box_1.jpg" alt="работа за компьютером" width="370" />
+							<p class="work-desc">Десктопные приложения</p>
 						</li>
 						<li class="work-item">
 							<img src="./images/box_2.jpg" alt="работа за телефонам" width="370" />
+							<p class="work-desc">Мобильные приложения</p>
 						</li>
 						<li class="work-item">
 							<img src="./images/box_3.jpg" alt="работа за планшетом" width="370" />
+							<p class="work-desc">Дизайнерские решения</p>
 						</li>
 					</ul>
 				</div>
@@ -391,5 +401,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
